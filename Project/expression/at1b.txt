@@ -1,0 +1,13 @@
+restart
+
+modulo
+analyze
+simplify
+
+restart
+
+modulo
+int_value (5)
+int_value (2)
+analyze
+simplify 

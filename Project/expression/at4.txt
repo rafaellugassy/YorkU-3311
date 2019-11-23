@@ -1,0 +1,14 @@
+forall
+start_of_set_enumeration 
+conjunction
+bool_value (true)
+bool_value (true)
+disjunction
+bool_value (true)
+bool_value (false)
+exclusive_or -- true xor true is false
+bool_value (true)
+bool_value (true)
+end_of_set_enumeration
+analyze
+simplify 

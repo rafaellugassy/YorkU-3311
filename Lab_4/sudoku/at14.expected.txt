@@ -1,0 +1,11 @@
+  Setting up a new grid
+  0   0   0   0
+  0   0   0   0
+  0   0   0   0
+  0   0   0   0
+->redo
+  Error: Nothing to redo
+  0   0   0   0
+  0   0   0   0
+  0   0   0   0
+  0   0   0   0

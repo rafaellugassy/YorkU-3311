@@ -1,0 +1,15 @@
+set_number(3, 2, 1)
+
+-- Error: invalid row numbers reported first
+set_number(5, 5, 1)
+set_number(0, 0, 1)
+set_number(5, 5, 5)
+set_number(0, 0, 0)
+
+-- Error: invalid column numbers reported first
+set_number(5, 2, 5)
+set_number(0, 2, 0)
+
+-- Error: filled slot reported first
+set_number(5, 2, 1)
+set_number(0, 2, 1)

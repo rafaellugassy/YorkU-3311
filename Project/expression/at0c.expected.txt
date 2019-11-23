@@ -1,0 +1,29 @@
+  Expression currently specified: ?
+  Report: Expression is initialized.
+->counting
+  Expression currently specified: (# ?)
+  Report: OK.
+->start_of_set_enumeration
+  Expression currently specified: (# {?})
+  Report: OK.
+->bool_value(True)
+  Expression currently specified: (# {True, ?})
+  Report: OK.
+->bool_value(False)
+  Expression currently specified: (# {True, False, ?})
+  Report: OK.
+->bool_value(True)
+  Expression currently specified: (# {True, False, True, ?})
+  Report: OK.
+->bool_value(False)
+  Expression currently specified: (# {True, False, True, False, ?})
+  Report: OK.
+->end_of_set_enumeration
+  Expression currently specified: (# {True, False, True, False})
+  Report: OK.
+->analyze
+  Expression currently specified: (# {True, False, True, False})
+  Report: (# {True, False, True, False}) is type-correct.
+->simplify
+  Expression currently specified: (# {True, False, True, False})
+  Report: 2

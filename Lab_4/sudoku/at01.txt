@@ -1,0 +1,2 @@
+-- Error: game has yet been started
+put_number(2, 1, 1)

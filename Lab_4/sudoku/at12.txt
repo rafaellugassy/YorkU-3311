@@ -1,0 +1,22 @@
+-- This example corresponds to Figure 1 in your Lab 3 instructions
+set_number(4, 1, 1)
+set_number(3, 2, 2)
+set_number(1, 4, 2)
+set_number(1, 1, 3)
+set_number(3, 3, 3)
+set_number(4, 4, 4)
+
+start_game
+
+put_number(2, 1, 2)
+put_number(4, 3, 2)
+put_number(3, 4, 1)
+put_number(1, 2, 1)
+put_number(2, 3, 1)
+put_number(4, 2, 3)
+put_number(2, 4, 3)
+put_number(1, 3, 4)
+put_number(3, 1, 4)
+put_number(2, 2, 4)
+
+restart_game

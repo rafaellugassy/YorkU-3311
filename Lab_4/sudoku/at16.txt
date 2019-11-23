@@ -1,0 +1,19 @@
+set_number(3, 2, 1) 	-- 1
+set_number(2, 2, 2) 	-- 2
+
+start_game 				-- 3
+
+put_number(1, 3, 3) 	-- 4
+put_number(3, 3, 4) 	-- 5
+
+restart_game			-- 6
+
+put_number(4, 2, 3)		-- error: game already started (so not included in history)
+
+set_number(4, 2, 3)		-- 7
+
+undo -- back to after executing 6
+undo -- error: cannot undo beyond the last restart_game
+
+redo -- back to after executing 7
+redo -- nothing to redo

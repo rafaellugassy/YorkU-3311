@@ -1,0 +1,5 @@
+set_number(3, 2, 1)
+
+-- Error: invalid number
+set_number(5, 2, 2)
+set_number(0, 2, 2)

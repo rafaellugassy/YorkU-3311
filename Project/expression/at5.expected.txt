@@ -1,0 +1,44 @@
+  Expression currently specified: ?
+  Report: Expression is initialized.
+->exists
+  Expression currently specified: (|| ?)
+  Report: OK.
+->start_of_set_enumeration
+  Expression currently specified: (|| {?})
+  Report: OK.
+->conjunction
+  Expression currently specified: (|| {(? && nil)})
+  Report: OK.
+->bool_value(True)
+  Expression currently specified: (|| {(True && ?)})
+  Report: OK.
+->bool_value(False)
+  Expression currently specified: (|| {(True && False), ?})
+  Report: OK.
+->disjunction
+  Expression currently specified: (|| {(True && False), (? || nil)})
+  Report: OK.
+->bool_value(False)
+  Expression currently specified: (|| {(True && False), (False || ?)})
+  Report: OK.
+->bool_value(False)
+  Expression currently specified: (|| {(True && False), (False || False), ?})
+  Report: OK.
+->exclusive_or
+  Expression currently specified: (|| {(True && False), (False || False), (? xor nil)})
+  Report: OK.
+->bool_value(True)
+  Expression currently specified: (|| {(True && False), (False || False), (True xor ?)})
+  Report: OK.
+->bool_value(False)
+  Expression currently specified: (|| {(True && False), (False || False), (True xor False), ?})
+  Report: OK.
+->end_of_set_enumeration
+  Expression currently specified: (|| {(True && False), (False || False), (True xor False)})
+  Report: OK.
+->analyze
+  Expression currently specified: (|| {(True && False), (False || False), (True xor False)})
+  Report: (|| {(True && False), (False || False), (True xor False)}) is type-correct.
+->simplify
+  Expression currently specified: (|| {(True && False), (False || False), (True xor False)})
+  Report: True

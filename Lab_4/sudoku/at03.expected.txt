@@ -1,0 +1,23 @@
+  Setting up a new grid
+  0   0   0   0
+  0   0   0   0
+  0   0   0   0
+  0   0   0   0
+->set_number(3,2,1)
+  Setting up a new grid
+  0   0   0   0
+  3   0   0   0
+  0   0   0   0
+  0   0   0   0
+->set_number(2,2,0)
+  Error: Invalid column number
+  0   0   0   0
+  3   0   0   0
+  0   0   0   0
+  0   0   0   0
+->set_number(2,2,5)
+  Error: Invalid column number
+  0   0   0   0
+  3   0   0   0
+  0   0   0   0
+  0   0   0   0

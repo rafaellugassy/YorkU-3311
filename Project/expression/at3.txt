@@ -1,0 +1,12 @@
+forall
+end_of_set_enumeration 
+bool_value(true)
+analyze
+simplify 
+
+restart
+
+start_of_set_enumeration 
+end_of_set_enumeration
+analyze
+simplify 

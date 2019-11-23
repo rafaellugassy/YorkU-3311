@@ -1,0 +1,23 @@
+  Setting up a new grid
+  0   0   0   0
+  0   0   0   0
+  0   0   0   0
+  0   0   0   0
+->set_number(3,2,1)
+  Setting up a new grid
+  0   0   0   0
+  3   0   0   0
+  0   0   0   0
+  0   0   0   0
+->set_number(5,2,2)
+  Error: Invalid value to put in cell
+  0   0   0   0
+  3   0   0   0
+  0   0   0   0
+  0   0   0   0
+->set_number(0,2,2)
+  Error: Invalid value to put in cell
+  0   0   0   0
+  3   0   0   0
+  0   0   0   0
+  0   0   0   0

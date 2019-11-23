@@ -1,0 +1,21 @@
+set_number(1, 1, 1)
+set_number(2, 2, 2)
+set_number(3, 3, 3)
+set_number(4, 4, 4)
+set_number(3, 1, 4)
+set_number(4, 2, 3)
+set_number(1, 3, 2)
+set_number(2, 4, 1)
+
+start_game
+
+put_number(4, 1, 2)
+put_number(3, 4, 2)
+put_number(3, 2, 1)
+put_number(4, 3, 1)
+put_number(1, 2, 4)
+put_number(2, 3, 4)
+put_number(2, 1, 3)
+put_number(1, 4, 3)
+
+restart_game

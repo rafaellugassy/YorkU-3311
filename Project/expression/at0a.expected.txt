@@ -1,0 +1,41 @@
+  Expression currently specified: ?
+  Report: Expression is initialized.
+->union
+  Expression currently specified: (? \/ nil)
+  Report: OK.
+->start_of_set_enumeration
+  Expression currently specified: ({?} \/ nil)
+  Report: OK.
+->bool_value(True)
+  Expression currently specified: ({True, ?} \/ nil)
+  Report: OK.
+->bool_value(True)
+  Expression currently specified: ({True, True, ?} \/ nil)
+  Report: OK.
+->bool_value(True)
+  Expression currently specified: ({True, True, True, ?} \/ nil)
+  Report: OK.
+->end_of_set_enumeration
+  Expression currently specified: ({True, True, True} \/ ?)
+  Report: OK.
+->start_of_set_enumeration
+  Expression currently specified: ({True, True, True} \/ {?})
+  Report: OK.
+->bool_value(False)
+  Expression currently specified: ({True, True, True} \/ {False, ?})
+  Report: OK.
+->bool_value(True)
+  Expression currently specified: ({True, True, True} \/ {False, True, ?})
+  Report: OK.
+->bool_value(True)
+  Expression currently specified: ({True, True, True} \/ {False, True, True, ?})
+  Report: OK.
+->simplify
+  Expression currently specified: ({True, True, True} \/ {False, True, True, ?})
+  Report: Error (Expression is not yet fully specified).
+->end_of_set_enumeration
+  Expression currently specified: ({True, True, True} \/ {False, True, True})
+  Report: OK.
+->simplify
+  Expression currently specified: ({True, True, True} \/ {False, True, True})
+  Report: {True, False}

@@ -1,0 +1,32 @@
+  Expression currently specified: ?
+  Report: Expression is initialized.
+->restart
+  Expression currently specified: ?
+  Report: Error (Initial expression cannot be reset).
+->modulo
+  Expression currently specified: (? mod nil)
+  Report: OK.
+->analyze
+  Expression currently specified: (? mod nil)
+  Report: Error (Expression is not yet fully specified).
+->simplify
+  Expression currently specified: (? mod nil)
+  Report: Error (Expression is not yet fully specified).
+->restart
+  Expression currently specified: ?
+  Report: OK.
+->modulo
+  Expression currently specified: (? mod nil)
+  Report: OK.
+->int_value(5)
+  Expression currently specified: (5 mod ?)
+  Report: OK.
+->int_value(2)
+  Expression currently specified: (5 mod 2)
+  Report: OK.
+->analyze
+  Expression currently specified: (5 mod 2)
+  Report: (5 mod 2) is type-correct.
+->simplify
+  Expression currently specified: (5 mod 2)
+  Report: 1

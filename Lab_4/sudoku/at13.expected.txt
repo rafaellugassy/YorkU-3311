@@ -1,0 +1,11 @@
+  Setting up a new grid
+  0   0   0   0
+  0   0   0   0
+  0   0   0   0
+  0   0   0   0
+->undo
+  Error: Nothing to undo
+  0   0   0   0
+  0   0   0   0
+  0   0   0   0
+  0   0   0   0

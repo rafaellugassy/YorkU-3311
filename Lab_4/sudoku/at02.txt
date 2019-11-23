@@ -1,0 +1,5 @@
+set_number(3, 2, 1)
+
+-- Error: invalid row number reported first
+set_number(2, 5, 0)
+set_number(2, 0, 5)

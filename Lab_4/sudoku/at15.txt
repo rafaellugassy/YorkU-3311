@@ -1,0 +1,29 @@
+set_number(3, 2, 1) 	-- 1
+set_number(2, 2, 2) 	-- 2
+set_number(1, 3, 3) 	-- 3
+set_number(3, 3, 4) 	-- 4
+
+start_game 				-- 5
+
+put_number(4, 3, 2) 	-- 6
+put_number(2, 3, 1)		-- 7
+
+undo -- back to after executing 6
+undo -- back to after executing 5
+undo -- back to after executing 4
+undo -- back to after executing 3
+undo -- back to after executing 2
+undo -- back to after executing 1
+undo -- back initial state
+
+undo -- error: nothing to undo
+
+redo -- back to after executing 1
+redo -- back to after executing 2
+redo -- back to after executing 3
+redo -- back to after executing 4
+redo -- back to after executing 5
+redo -- back to after executing 6
+redo -- back to after executing 7
+
+redo -- error: nothing to redo

@@ -1,0 +1,13 @@
+restart
+
+quotient
+analyze
+simplify
+
+restart
+
+quotient
+int_value (5)
+int_value (2)
+analyze
+simplify 

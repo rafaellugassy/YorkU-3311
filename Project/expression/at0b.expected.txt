@@ -1,0 +1,59 @@
+  Expression currently specified: ?
+  Report: Expression is initialized.
+->product
+  Expression currently specified: (* ?)
+  Report: OK.
+->start_of_set_enumeration
+  Expression currently specified: (* {?})
+  Report: OK.
+->int_value(4)
+  Expression currently specified: (* {4, ?})
+  Report: OK.
+->int_value(2)
+  Expression currently specified: (* {4, 2, ?})
+  Report: OK.
+->int_value(3)
+  Expression currently specified: (* {4, 2, 3, ?})
+  Report: OK.
+->int_value(2)
+  Expression currently specified: (* {4, 2, 3, 2, ?})
+  Report: OK.
+->int_value(3)
+  Expression currently specified: (* {4, 2, 3, 2, 3, ?})
+  Report: OK.
+->end_of_set_enumeration
+  Expression currently specified: (* {4, 2, 3, 2, 3})
+  Report: OK.
+->simplify
+  Expression currently specified: (* {4, 2, 3, 2, 3})
+  Report: 144
+->restart
+  Expression currently specified: ?
+  Report: OK.
+->sigma
+  Expression currently specified: (+ ?)
+  Report: OK.
+->start_of_set_enumeration
+  Expression currently specified: (+ {?})
+  Report: OK.
+->int_value(4)
+  Expression currently specified: (+ {4, ?})
+  Report: OK.
+->int_value(2)
+  Expression currently specified: (+ {4, 2, ?})
+  Report: OK.
+->int_value(3)
+  Expression currently specified: (+ {4, 2, 3, ?})
+  Report: OK.
+->int_value(2)
+  Expression currently specified: (+ {4, 2, 3, 2, ?})
+  Report: OK.
+->int_value(3)
+  Expression currently specified: (+ {4, 2, 3, 2, 3, ?})
+  Report: OK.
+->end_of_set_enumeration
+  Expression currently specified: (+ {4, 2, 3, 2, 3})
+  Report: OK.
+->simplify
+  Expression currently specified: (+ {4, 2, 3, 2, 3})
+  Report: 14

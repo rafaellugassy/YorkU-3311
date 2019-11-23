@@ -1,0 +1,50 @@
+-- The abstract user interface specifies the construction of an expression language.
+
+system expression
+
+-- Events of users requesting for processing the expression (entered so far)
+analyze
+simplify 
+restart
+
+-- Events of users adding constants
+bool_value (c: BOOLEAN)
+int_value (c: INTEGER)
+
+-- Events of users adding binary arithmetic operations
+addition
+subtraction
+multiplication
+quotient
+modulo
+
+-- Events of users adding binary logical operations
+conjunction
+disjunction
+implication
+exclusive_or
+
+-- Events of users adding binary relational operations
+equals
+greater_than
+less_than
+
+-- Events of users adding binary set operations
+union
+intersection
+difference
+
+-- Events of users adding unary numerical or logical operations
+numerical_negation
+logical_negation
+
+-- Events of users adding unary composite operations
+sigma
+product
+counting
+forall
+exists
+
+-- Events of users starting/finishing entering set enumerations 
+start_of_set_enumeration
+end_of_set_enumeration

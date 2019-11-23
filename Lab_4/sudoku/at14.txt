@@ -1,0 +1,2 @@
+-- setting up a new game, nothing to redo
+redo

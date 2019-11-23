@@ -1,0 +1,18 @@
+system sudoku
+
+-- set up the game
+set_number (num: INTEGER; row: INTEGER; col: INTEGER)
+
+-- start the game
+start_game
+
+-- put number without undoing
+put_number (num: INTEGER; row: INTEGER; col: INTEGER)
+
+-- undo, redo features
+undo
+
+redo
+
+-- restart the game
+restart_game

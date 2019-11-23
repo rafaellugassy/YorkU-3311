@@ -1,0 +1,68 @@
+  Expression currently specified: ?
+  Report: Expression is initialized.
+->addition
+  Expression currently specified: (? + nil)
+  Report: OK.
+->counting
+  Expression currently specified: ((# ?) + nil)
+  Report: OK.
+->start_of_set_enumeration
+  Expression currently specified: ((# {?}) + nil)
+  Report: OK.
+->bool_value(True)
+  Expression currently specified: ((# {True, ?}) + nil)
+  Report: OK.
+->bool_value(False)
+  Expression currently specified: ((# {True, False, ?}) + nil)
+  Report: OK.
+->bool_value(True)
+  Expression currently specified: ((# {True, False, True, ?}) + nil)
+  Report: OK.
+->bool_value(False)
+  Expression currently specified: ((# {True, False, True, False, ?}) + nil)
+  Report: OK.
+->end_of_set_enumeration
+  Expression currently specified: ((# {True, False, True, False}) + ?)
+  Report: OK.
+->counting
+  Expression currently specified: ((# {True, False, True, False}) + (# ?))
+  Report: OK.
+->start_of_set_enumeration
+  Expression currently specified: ((# {True, False, True, False}) + (# {?}))
+  Report: OK.
+->greater_than
+  Expression currently specified: ((# {True, False, True, False}) + (# {(? > nil)}))
+  Report: OK.
+->int_value(4)
+  Expression currently specified: ((# {True, False, True, False}) + (# {(4 > ?)}))
+  Report: OK.
+->int_value(3)
+  Expression currently specified: ((# {True, False, True, False}) + (# {(4 > 3), ?}))
+  Report: OK.
+->greater_than
+  Expression currently specified: ((# {True, False, True, False}) + (# {(4 > 3), (? > nil)}))
+  Report: OK.
+->int_value(3)
+  Expression currently specified: ((# {True, False, True, False}) + (# {(4 > 3), (3 > ?)}))
+  Report: OK.
+->int_value(4)
+  Expression currently specified: ((# {True, False, True, False}) + (# {(4 > 3), (3 > 4), ?}))
+  Report: OK.
+->less_than
+  Expression currently specified: ((# {True, False, True, False}) + (# {(4 > 3), (3 > 4), (? < nil)}))
+  Report: OK.
+->int_value(0)
+  Expression currently specified: ((# {True, False, True, False}) + (# {(4 > 3), (3 > 4), (0 < ?)}))
+  Report: OK.
+->int_value(1)
+  Expression currently specified: ((# {True, False, True, False}) + (# {(4 > 3), (3 > 4), (0 < 1), ?}))
+  Report: OK.
+->end_of_set_enumeration
+  Expression currently specified: ((# {True, False, True, False}) + (# {(4 > 3), (3 > 4), (0 < 1)}))
+  Report: OK.
+->analyze
+  Expression currently specified: ((# {True, False, True, False}) + (# {(4 > 3), (3 > 4), (0 < 1)}))
+  Report: ((# {True, False, True, False}) + (# {(4 > 3), (3 > 4), (0 < 1)})) is type-correct.
+->simplify
+  Expression currently specified: ((# {True, False, True, False}) + (# {(4 > 3), (3 > 4), (0 < 1)}))
+  Report: 4

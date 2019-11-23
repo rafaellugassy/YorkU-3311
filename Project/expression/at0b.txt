@@ -1,0 +1,27 @@
+product
+
+start_of_set_enumeration
+int_value(4)
+int_value(2)
+int_value(3)
+int_value(2)
+int_value(3)
+end_of_set_enumeration
+
+-- duplicates are included for the evaluation
+simplify
+
+restart 
+
+sigma
+
+start_of_set_enumeration
+int_value(4)
+int_value(2)
+int_value(3)
+int_value(2)
+int_value(3)
+end_of_set_enumeration
+
+-- duplicates are included for the evaluation
+simplify

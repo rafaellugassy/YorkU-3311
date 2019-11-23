@@ -1,0 +1,7 @@
+set_number(3, 2, 1)
+set_number(2, 2, 2)
+set_number(1, 3, 3)
+set_number(3, 3, 4)
+
+-- Error: value already exists in subgrid
+set_number(2, 1, 1)

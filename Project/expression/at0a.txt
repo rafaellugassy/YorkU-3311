@@ -1,0 +1,16 @@
+union
+
+start_of_set_enumeration
+bool_value(true)
+bool_value(true)
+bool_value(true)
+end_of_set_enumeration
+
+start_of_set_enumeration
+bool_value(false)
+bool_value(true)
+bool_value(true)
+simplify
+end_of_set_enumeration
+
+simplify

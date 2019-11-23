@@ -1,0 +1,12 @@
+counting
+
+start_of_set_enumeration
+bool_value(true)
+bool_value(false)
+bool_value(true)
+bool_value(false)
+end_of_set_enumeration
+
+analyze
+-- count the number of true values (including duplicates)
+simplify

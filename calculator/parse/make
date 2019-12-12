@@ -1,0 +1,9 @@
+#!/bin/bash
+export ISE_EIFFEL=/eecs/local/packages/Eiffel17.05
+export ISE_PLATFORM=linux-x86-64
+export MATHMODELS=/cs/fac/share/sel/mathmodels
+export GOBO=$ISE_EIFFEL/library/gobo/spec/$ISE_PLATFORM/bin
+export PATH=$PATH:$ISE_EIFFEL/studio/spec/$ISE_PLATFORM/bin:$GOBO
+gelex calc_scanner.l
+geyacc -v temp.txt -o calc_parser.e -t calc_tokens calc_parser.y
+

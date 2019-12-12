@@ -1,0 +1,356 @@
+  ok:  => start new game
+  ___
+  ___
+  ___
+  0: score for "" (as X)
+  0: score for "" (as O)
+->new_game("4","Ora")
+  name must start with A-Z or a-z:  => start new game
+  ___
+  ___
+  ___
+  0: score for "" (as X)
+  0: score for "" (as O)
+->new_game("4","4")
+  names of players must be different:  => start new game
+  ___
+  ___
+  ___
+  0: score for "" (as X)
+  0: score for "" (as O)
+->new_game("Xavier","3")
+  name must start with A-Z or a-z:  => start new game
+  ___
+  ___
+  ___
+  0: score for "" (as X)
+  0: score for "" (as O)
+->new_game("Ora","Ora")
+  names of players must be different:  => start new game
+  ___
+  ___
+  ___
+  0: score for "" (as X)
+  0: score for "" (as O)
+->new_game("Xavier","Ora")
+  ok: => Xavier plays next
+  ___
+  ___
+  ___
+  0: score for "Xavier" (as X)
+  0: score for "Ora" (as O)
+->new_game("Xavier","Ora")
+  ok: => Xavier plays next
+  ___
+  ___
+  ___
+  0: score for "Xavier" (as X)
+  0: score for "Ora" (as O)
+->new_game("4","Ora")
+  name must start with A-Z or a-z: => Xavier plays next
+  ___
+  ___
+  ___
+  0: score for "Xavier" (as X)
+  0: score for "Ora" (as O)
+->new_game("4","4")
+  names of players must be different: => Xavier plays next
+  ___
+  ___
+  ___
+  0: score for "Xavier" (as X)
+  0: score for "Ora" (as O)
+->new_game("Ora","Ora")
+  names of players must be different: => Xavier plays next
+  ___
+  ___
+  ___
+  0: score for "Xavier" (as X)
+  0: score for "Ora" (as O)
+->play_again
+  finish this game first: => Xavier plays next
+  ___
+  ___
+  ___
+  0: score for "Xavier" (as X)
+  0: score for "Ora" (as O)
+->play("Xavier",1)
+  ok: => Ora plays next
+  X__
+  ___
+  ___
+  0: score for "Xavier" (as X)
+  0: score for "Ora" (as O)
+->play("Ora",2)
+  ok: => Xavier plays next
+  XO_
+  ___
+  ___
+  0: score for "Xavier" (as X)
+  0: score for "Ora" (as O)
+->play("Xavier",9)
+  ok: => Ora plays next
+  XO_
+  ___
+  __X
+  0: score for "Xavier" (as X)
+  0: score for "Ora" (as O)
+->play("Ora",5)
+  ok: => Xavier plays next
+  XO_
+  _O_
+  __X
+  0: score for "Xavier" (as X)
+  0: score for "Ora" (as O)
+->play("1",2)
+  no such player: => Xavier plays next
+  XO_
+  _O_
+  __X
+  0: score for "Xavier" (as X)
+  0: score for "Ora" (as O)
+->play("Xavier",5)
+  button already taken: => Xavier plays next
+  XO_
+  _O_
+  __X
+  0: score for "Xavier" (as X)
+  0: score for "Ora" (as O)
+->play("Xavier",8)
+  ok: => Ora plays next
+  XO_
+  _O_
+  _XX
+  0: score for "Xavier" (as X)
+  0: score for "Ora" (as O)
+->play("Xavier",7)
+  not this player's turn: => Ora plays next
+  XO_
+  _O_
+  _XX
+  0: score for "Xavier" (as X)
+  0: score for "Ora" (as O)
+->play("Ora",8)
+  button already taken: => Ora plays next
+  XO_
+  _O_
+  _XX
+  0: score for "Xavier" (as X)
+  0: score for "Ora" (as O)
+->play("Ora",8)
+  button already taken: => Ora plays next
+  XO_
+  _O_
+  _XX
+  0: score for "Xavier" (as X)
+  0: score for "Ora" (as O)
+->play("Ora",3)
+  ok: => Xavier plays next
+  XOO
+  _O_
+  _XX
+  0: score for "Xavier" (as X)
+  0: score for "Ora" (as O)
+->play_again
+  finish this game first: => Xavier plays next
+  XOO
+  _O_
+  _XX
+  0: score for "Xavier" (as X)
+  0: score for "Ora" (as O)
+->play("Ora",9)
+  not this player's turn: => Xavier plays next
+  XOO
+  _O_
+  _XX
+  0: score for "Xavier" (as X)
+  0: score for "Ora" (as O)
+->play("Xavier",7)
+  there is a winner: => play again or start new game
+  XOO
+  _O_
+  XXX
+  1: score for "Xavier" (as X)
+  0: score for "Ora" (as O)
+->play("Ora",5)
+  game is finished: => play again or start new game
+  XOO
+  _O_
+  XXX
+  1: score for "Xavier" (as X)
+  0: score for "Ora" (as O)
+->play("Xavier",1)
+  game is finished: => play again or start new game
+  XOO
+  _O_
+  XXX
+  1: score for "Xavier" (as X)
+  0: score for "Ora" (as O)
+->play("Ora",2)
+  game is finished: => play again or start new game
+  XOO
+  _O_
+  XXX
+  1: score for "Xavier" (as X)
+  0: score for "Ora" (as O)
+->play("Xavier",4)
+  game is finished: => play again or start new game
+  XOO
+  _O_
+  XXX
+  1: score for "Xavier" (as X)
+  0: score for "Ora" (as O)
+->undo
+  game is finished: => play again or start new game
+  XOO
+  _O_
+  XXX
+  1: score for "Xavier" (as X)
+  0: score for "Ora" (as O)
+->undo
+  game is finished: => play again or start new game
+  XOO
+  _O_
+  XXX
+  1: score for "Xavier" (as X)
+  0: score for "Ora" (as O)
+->redo
+  game is finished: => play again or start new game
+  XOO
+  _O_
+  XXX
+  1: score for "Xavier" (as X)
+  0: score for "Ora" (as O)
+->redo
+  game is finished: => play again or start new game
+  XOO
+  _O_
+  XXX
+  1: score for "Xavier" (as X)
+  0: score for "Ora" (as O)
+->new_game("Pete","Tim")
+  ok: => Pete plays next
+  ___
+  ___
+  ___
+  0: score for "Pete" (as X)
+  0: score for "Tim" (as O)
+->play("Pete",1)
+  ok: => Tim plays next
+  X__
+  ___
+  ___
+  0: score for "Pete" (as X)
+  0: score for "Tim" (as O)
+->play("Tim",3)
+  ok: => Pete plays next
+  X_O
+  ___
+  ___
+  0: score for "Pete" (as X)
+  0: score for "Tim" (as O)
+->play("Pete",2)
+  ok: => Tim plays next
+  XXO
+  ___
+  ___
+  0: score for "Pete" (as X)
+  0: score for "Tim" (as O)
+->play("Tim",4)
+  ok: => Pete plays next
+  XXO
+  O__
+  ___
+  0: score for "Pete" (as X)
+  0: score for "Tim" (as O)
+->play("Pete",9)
+  ok: => Tim plays next
+  XXO
+  O__
+  __X
+  0: score for "Pete" (as X)
+  0: score for "Tim" (as O)
+->undo
+  ok: => Pete plays next
+  XXO
+  O__
+  ___
+  0: score for "Pete" (as X)
+  0: score for "Tim" (as O)
+->undo
+  ok: => Tim plays next
+  XXO
+  ___
+  ___
+  0: score for "Pete" (as X)
+  0: score for "Tim" (as O)
+->redo
+  ok: => Pete plays next
+  XXO
+  O__
+  ___
+  0: score for "Pete" (as X)
+  0: score for "Tim" (as O)
+->redo
+  ok: => Tim plays next
+  XXO
+  O__
+  __X
+  0: score for "Pete" (as X)
+  0: score for "Tim" (as O)
+->play("Tim",5)
+  ok: => Pete plays next
+  XXO
+  OO_
+  __X
+  0: score for "Pete" (as X)
+  0: score for "Tim" (as O)
+->play("Pete",6)
+  ok: => Tim plays next
+  XXO
+  OOX
+  __X
+  0: score for "Pete" (as X)
+  0: score for "Tim" (as O)
+->play("Tim",7)
+  there is a winner: => play again or start new game
+  XXO
+  OOX
+  O_X
+  0: score for "Pete" (as X)
+  1: score for "Tim" (as O)
+->play("Pete",8)
+  game is finished: => play again or start new game
+  XXO
+  OOX
+  O_X
+  0: score for "Pete" (as X)
+  1: score for "Tim" (as O)
+->undo
+  game is finished: => play again or start new game
+  XXO
+  OOX
+  O_X
+  0: score for "Pete" (as X)
+  1: score for "Tim" (as O)
+->undo
+  game is finished: => play again or start new game
+  XXO
+  OOX
+  O_X
+  0: score for "Pete" (as X)
+  1: score for "Tim" (as O)
+->redo
+  game is finished: => play again or start new game
+  XXO
+  OOX
+  O_X
+  0: score for "Pete" (as X)
+  1: score for "Tim" (as O)
+->play_again
+  ok: => Tim plays next
+  ___
+  ___
+  ___
+  0: score for "Pete" (as X)
+  1: score for "Tim" (as O)

@@ -1,0 +1,24 @@
+--normal execution, no errors
+new_game("Xavier","Ora")
+play("Xavier",1)
+play("Ora",2)
+play("Xavier",9)
+play("Ora",5)
+play("Xavier",7)
+play("Ora",8)
+-- Ora wins
+play_again
+play("Ora",9)
+play("Xavier",7)
+play("Ora",5)
+play("Xavier",1)
+play("Ora",2)
+play("Xavier",4)
+-- Xavier wins
+new_game("Pete","Tim")
+
+
+
+
+
+

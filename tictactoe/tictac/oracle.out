@@ -1,0 +1,111 @@
+  ok:  => start new game
+  ___
+  ___
+  ___
+  0: score for "" (as X)
+  0: score for "" (as O)
+->new_game("Xavier","Ora")
+  ok: => Xavier plays next
+  ___
+  ___
+  ___
+  0: score for "Xavier" (as X)
+  0: score for "Ora" (as O)
+->play("Xavier",1)
+  ok: => Ora plays next
+  X__
+  ___
+  ___
+  0: score for "Xavier" (as X)
+  0: score for "Ora" (as O)
+->play("Ora",2)
+  ok: => Xavier plays next
+  XO_
+  ___
+  ___
+  0: score for "Xavier" (as X)
+  0: score for "Ora" (as O)
+->play("Xavier",9)
+  ok: => Ora plays next
+  XO_
+  ___
+  __X
+  0: score for "Xavier" (as X)
+  0: score for "Ora" (as O)
+->play("Ora",5)
+  ok: => Xavier plays next
+  XO_
+  _O_
+  __X
+  0: score for "Xavier" (as X)
+  0: score for "Ora" (as O)
+->play("Xavier",7)
+  ok: => Ora plays next
+  XO_
+  _O_
+  X_X
+  0: score for "Xavier" (as X)
+  0: score for "Ora" (as O)
+->play("Ora",8)
+  there is a winner: => play again or start new game
+  XO_
+  _O_
+  XOX
+  0: score for "Xavier" (as X)
+  1: score for "Ora" (as O)
+->play_again
+  ok: => Ora plays next
+  ___
+  ___
+  ___
+  0: score for "Xavier" (as X)
+  1: score for "Ora" (as O)
+->play("Ora",9)
+  ok: => Xavier plays next
+  ___
+  ___
+  __O
+  0: score for "Xavier" (as X)
+  1: score for "Ora" (as O)
+->play("Xavier",7)
+  ok: => Ora plays next
+  ___
+  ___
+  X_O
+  0: score for "Xavier" (as X)
+  1: score for "Ora" (as O)
+->play("Ora",5)
+  ok: => Xavier plays next
+  ___
+  _O_
+  X_O
+  0: score for "Xavier" (as X)
+  1: score for "Ora" (as O)
+->play("Xavier",1)
+  ok: => Ora plays next
+  X__
+  _O_
+  X_O
+  0: score for "Xavier" (as X)
+  1: score for "Ora" (as O)
+->play("Ora",2)
+  ok: => Xavier plays next
+  XO_
+  _O_
+  X_O
+  0: score for "Xavier" (as X)
+  1: score for "Ora" (as O)
+->play("Xavier",4)
+  there is a winner: => play again or start new game
+  XO_
+  XO_
+  X_O
+  1: score for "Xavier" (as X)
+  1: score for "Ora" (as O)
+->new_game("Pete","Tim")
+  ok: => Pete plays next
+  ___
+  ___
+  ___
+  0: score for "Pete" (as X)
+  0: score for "Tim" (as O)

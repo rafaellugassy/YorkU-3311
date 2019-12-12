@@ -1,0 +1,14 @@
+Possible status messages for TicTac
+(but check oracle for consistency;
+in all cases the oracle governs)
+================================
+ok
+names of players must be different
+name must start with A-Z or a-z
+not this player's turn
+no such player
+button already taken
+there is a winner
+finish this game first
+game is finished
+game ended in a tie
